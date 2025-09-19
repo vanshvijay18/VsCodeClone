@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VSCode Clone</title>
+  <link rel="icon" type="image/x-icon" href="vscode.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="bg-[#0F172A] h-[5vh]  border-2 border-black  flex flex-row justify-between  text-white text-sm">
+    <!-- VScodeImg or List NavbarLeft -->
+    <div class="flex flex-row ">
+      <img src="vscode.svg" class="h-[3vh] mt-1 ">
+      <div class="flex flex-row mt-1 ml-4 gap-3">
+        <p class="hover:bg-slate-500 cursor-pointer rounded-sm">File</p>
+        <p class="hover:bg-slate-500 cursor-pointer rounded-sm">Edit</p>
+        <p class="hover:bg-slate-500 cursor-pointer rounded-sm">Selection</p>
+        <p class="hover:bg-slate-500 cursor-pointer rounded-sm">View</p>
+        <p class="hover:bg-slate-500 cursor-pointer rounded-sm">Go</p>
+        <p class="hover:bg-slate-500 cursor-pointer rounded-sm">Run</p>
+        <p class="hover:bg-slate-500 cursor-pointer rounded-sm">Terminal</p>
+        <p class="hover:bg-slate-500 cursor-pointer rounded-sm">Help</p>
+      </div>
+    </div>
+    <!-- Navbar Right -->
+    <div class="flex flex-row gap-30   ">
+
+      <!-- navbar right1(Search)  -->
+      <div>
+        <i class="hover:bg-slate-500 cursor-pointer rounded-sm fa-solid fa-arrow-left "></i>
+        <i class="hover:bg-slate-500 cursor-pointer rounded-sm fa-solid fa-arrow-right mr-10"></i>
+        <input type="text" placeholder="FrontEndG " class="w-[30vw] h-8 text-center rounded-sm border ">
+        <i class="hover:bg-slate-500 cursor-pointer rounded-sm fab fa-github-alt  "></i>
+      </div>
+      <!-- Navbar right2 -->
+      <div class="mt-1">
+        <i class="hover:bg-slate-500 cursor-pointer rounded-sm fa-solid fa-layer-group"></i>
+        <i class="hover:bg-slate-500 cursor-pointer rounded-sm fa-solid fa-table-columns"></i>
+      </div>
+      <!--Navbar right3  -->
+      <div class="mt-1">
+        <i class="hover:bg-slate-500 cursor-pointer rounded-sm fa-solid fa-minus"></i>
+        <i class="hover:bg-slate-500 cursor-pointer rounded-sm fa-regular fa-square"></i>
+        <i class="hover:bg-slate-500 cursor-pointer rounded-sm fa-solid fa-xmark"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- main -->
+  <div class="bg-gray-900 min-h-[80vh] flex">
+    <!-- Left Side -->
+    <div class="bg-[#0F172A]  w-3/100 flex flex-col justify-between p-2 border-2 border-solid border-black">
+      <!-- upper icons--google font awesome-cdn  font awesome -->
+      <div>
+        <ul class="flex flex-col gap-5 text-2xl text-white">
+          <li class="hover:bg-slate-500 cursor-pointer rounded-sm"><i class="fa-solid fa-file"></i></li>
+          <li class="hover:bg-slate-500 cursor-pointer rounded-sm"><i class="fa-solid fa-magnifying-glass"></i></li>
+          <li class="hover:bg-slate-500 cursor-pointer rounded-sm"><i class="fa-brands fa-github"></i></li>
+          <li class="hover:bg-slate-500 cursor-pointer rounded-sm"><i class="fa-solid fa-play"></i></li>
+          <li class="hover:bg-slate-500 cursor-pointer rounded-sm"><i class="fa-brands fa-python"></i></li>
+          <li class="hover:bg-slate-500 cursor-pointer rounded-sm"><i class="fa-solid fa-bug"></i></li>
+          <li class="hover:bg-slate-500 cursor-pointer rounded-sm"><i class="fa-solid fa-puzzle-piece"></i></i></li>
+        </ul>
+      </div>
+      <!-- lower icons  -->
+      <div>
+        <ul class="flex flex-col gap-2 text-2xl">
+          <li class="hover:bg-slate-500 cursor-pointer rounded-sm"><i class="text-white fa-solid fa-gear"></i></li>
+          <li class="hover:bg-slate-500 cursor-pointer rounded-sm"><i class="text-white fa-solid fa-user"></i></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Center Side -->
+    <div class="text-white bg-slate-800  w-17/100 border-2 border-solid border-black">
+      <div class="flex flex-row justify-between mb-5 p-2 text-xs">
+        <font class="cursor-default">EXPLORER</font>
+        <i class="fa-solid fa-ellipsis cursor-pointer hover:bg-slate-500 rounded-sm"></i>
+      </div>
+
+      <div class="m-2 flex  justify-between">
+
+        <div class="hover:bg-slate-500 cursor-pointer rounded-sm"><i class="fas fa-angle-down"></i>
+          <font>FRONTENDG </font>
+        </div>
+
+        <p>
+          <i class="rounded-sm hover:bg-slate-500 fa-solid fa-file-circle-plus cursor-pointer"></i>
+          <i class="rounded-sm hover:bg-slate-500 fa-solid fa-folder-plus cursor-pointer"></i>
+          <i class="rounded-sm hover:bg-slate-500 fa-regular fa-spinner cursor-pointer"></i>
+          <i class="rounded-sm hover:bg-slate-500 fa-solid fa-clone cursor-pointer"></i>
+        </p>
+      </div>
+
+      <div class="flex flex-col min-h-[80.1vh] justify-between ">
+        <div >
+
+          <div class="hover:bg-blue-500 cursor-pointer pl-5"><i class="fas fa-angle-down"></i><i
+              class="fa-brands fa-css text-purple-300 "></i></div>
+          <ul class=" text-xs space-y-2 pt-2">
+            <li class="hover:bg-slate-500 cursor-pointer pl-10"><i class="fa-solid fa-folder"></i><i
+                class="fas fa-angle-right text-xs"></i>ASSIGNMENT</li>
+            <li class="hover:bg-slate-500 cursor-pointer pl-10"><i class="fa-solid fa-folder"></i><i
+                class="fas fa-angle-right text-xs"></i>Tailwind</li>
+            <li class="hover:bg-slate-500 cursor-pointer pl-10"><i
+                class="fa-solid fa-code text-red-300 text-xs"></i>Index.html</li>
+            <li class="hover:bg-slate-500 cursor-pointer pl-10"><i
+                class="fa-solid fa-code text-red-300 text-xs"></i>Index2.html</li>
+          </ul>
+          <div class="hover:bg-blue-500 cursor-pointer pl-5 pt-3"><i class="fas fa-angle-down"></i><i
+              class="fa-brands fa-html5 text-red-400  text-xl"></i></div>
+          <ul class=" text-xs space-y-2 pt-2 ">
+            <li class="hover:bg-slate-500 cursor-pointer pl-10 "><i class="fa-solid  fa-folder"></i><i
+                class="fas fa-angle-right text-xs"></i>ASSIGNMENT</li>
+            <li class="hover:bg-slate-500 cursor-pointer pl-10"><i class="fa-solid  fa-folder"></i><i
+                class="fas fa-angle-right text-xs"></i>DAY01</li>
+            <li class="hover:bg-slate-500 cursor-pointer pl-10"><i class="fa-solid  fa-folder "></i><i
+                class="fas fa-angle-right text-xs"></i>DAY02</li>
+            <li class="hover:bg-slate-500 cursor-pointer pl-10"><i
+                class="fa-solid  fa-code text-red-300 text-xs"></i>Index2.html</li>
+            <li class="hover:bg-slate-500 cursor-pointer pl-10"><i
+                class="fa-solid  fa-code text-red-300 text-xs"></i>Index5.html</li>
+          </ul>
+
+        </div>
+        <div>
+          <ul class="text-l ">
+            <li class="hover:bg-slate-500 cursor-pointer pl-3"><i class="fas fa-angle-right"></i>OUTLINE</li>
+            <li class="hover:bg-slate-500 cursor-pointer pl-3"><i class="fas fa-angle-right"></i>TIMELINE</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side  -->
+    <div class="bg-[#0F172A] w-80/100 border-2 border-solid border-black">
+      <!-- RightSideTop -->
+      <div class="flex flex-row text-white border border-gray-700 ">
+        <p
+          class="hover:bg-slate-500 cursor-pointer rounded-sm border-0  border-r-1 border-gray-500 w-[9vw]  h-[5vh] text-sm  bg-gray-700 ">
+          <i class="fa-solid fa-code text-red-300 text-xs mt-2"></i>Index.html<i
+            class="hover:bg-slate-700 cursor-pointer rounded-sm fa-solid fa-xmark text-xs ml-10"></i>
+        </p>
+        <p
+          class="hover:bg-slate-500 cursor-pointer rounded-sm border-0 border-r-1 border-gray-500 w-[9vw] h-[5vh]  text-sm  bg-gray-700">
+          <i class="fa-solid fa-code text-red-300 text-xs mt-2"></i>Index2.html <i
+            class="hover:bg-slate-700 cursor-pointer rounded-sm fa-solid fa-xmark text-xs ml-5"></i>
+        </p>
+        <p
+          class="hover:bg-slate-500 cursor-pointer rounded-sm border-0 border-r-1 border-gray-500 w-[9vw] h-[5vh]  text-sm  bg-gray-700">
+          <i class="fa-solid fa-code text-red-300 text-xs mt-2"></i>Index3.html <i
+            class="hover:bg-slate-700 cursor-pointer rounded-sm fa-solid fa-xmark text-xs ml-5"></i>
+        </p>
+        <i class="fas fa-play mt-3 ml-[51vw] hover:bg-gray-700 rounded-sm cursor-pointer "></i>
+      </div>
+      <!-- RightSide Static Side Middle -->
+      <div class="text-white ">
+        <h2 class="text-green-400  mt-2"> 🧾 Static Preview:</h2>
+    <pre class="whitespace-pre-wrap ">
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+      &lt;meta charset="UTF-8"&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      &lt;title&gt;Demo&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+      &lt;h1&gt;Hello, VS Code Clone!&lt;/h1&gt;
+      &lt;p&gt;This is a demo code snippet.&lt;/p&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;
+    </pre>
+      </div>
+      <!-- RightSide Editable bottom -->
+      <div class="bg-slate-900">
+        <h2 class="text-blue-400 font-semibold ">✏️ Editable HTML:</h2>
+        <textarea
+          class="w-full h-66 bg-slate-700 text-white p-2 text-sm rounded-lg resize-none outline-none border border-gray-600"
+          spellcheck="false">
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+               &lt;meta charset="UTF-8" /&gt;
+               &lt;title&gt;My Project&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Editable Section&lt;/h1&gt;
+                &lt;p&gt;Type here to simulate real editor behavior.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+          </textarea>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <!-- Footer-->
+  <div class="bg-[#0F172A] h-[3vh]  border-2 border-black  flex flex-row justify-between  text-white text-sm">
+    <!-- LeftSideFooter -->
+    <div class="flex flex-row gap-3 mt-1 text-xs">
+      <i class="fa-solid fa-laptop-file ml-2 hover:bg-slate-500 cursor-pointer rounded-sm"></i>
+      <i class="fa-regular fa-circle-xmark ml-10 hover:bg-slate-500 cursor-pointer rounded-sm"></i>
+      <i class="fa-solid fa-triangle-exclamation hover:bg-slate-500 cursor-pointer rounded-sm"></i>
+    </div>
+    <!-- RightSideFooter -->
+    <div class="flex flex-row gap-5">
+      <p class="hover:bg-slate-500 cursor-pointer rounded-sm">Ln4,Col1</p>
+      <p class="hover:bg-slate-500 cursor-pointer rounded-sm">Spaces:4</p>
+      <p class="hover:bg-slate-500 cursor-pointer rounded-sm">UTF-8</p>
+      <p class="hover:bg-slate-500 cursor-pointer rounded-sm">CRLF</p>
+      <pre class="hover:bg-slate-500 cursor-pointer rounded-sm">{ }HTML</pre>
+      <p class="hover:bg-slate-500 cursor-pointer rounded-sm"><i class="fa-brands fa-github-alt"></i>Finish Setup</p>
+      <p class="hover:bg-slate-500 cursor-pointer rounded-sm"><i class="fa-solid fa-globe"></i>Live Server</p>
+      <p class="hover:bg-slate-500 cursor-pointer rounded-sm"><i class="fa-solid fa-check-double "></i>Prettier</p>
+      <i class="fa-solid fa-bell mt-1 hover:bg-slate-500 cursor-pointer rounded-sm"></i>
+    </div>
+  </div>
+</body>
+
+</html>
